@@ -1,0 +1,106 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  background-color: lightgray;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/*add flex grow to make main section take up majority of space*/
+main {
+  display: flex;
+  flex-grow: 1;
+}
+
+/* changes header of page */
+.brand {
+  font-size: 4rem;
+  font-weight: bolder;
+  background-color: lightpink;
+  border: 2px solid;
+  padding: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* moves nav to the right*/
+nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: auto;
+}
+
+/*removes underline from links & styles nav*/
+nav a {
+  padding: 0.75rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: purple;
+}
+
+/*spaces the whole sidebar container to the left*/
+ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  font-size: 2rem;
+  font-weight: bold;
+  gap: 0.75rem;
+}
+
+/*styles the sidebar itself*/
+li {
+  background-color: rgb(24, 87, 50);
+  color: white;
+  width: 10rem;
+  height: 3rem;
+  padding: 0.6rem;
+  border: 2px solid black;
+  border-radius: 2vh;
+}
+
+/*moves article to the center under header and nav, next to sidebar*/
+article {
+  display: flex;
+  flex-direction: column;
+}
+
+/*moves h1 and styles*/
+h1 {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 200%;
+  font-weight: bolder;
+  padding-left: 5%;
+}
+
+p {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 5%;
+}
+
+.testimonial {
+  background-color: azure;
+  font-style: italic;
+  padding: 1rem;
+  width: fit-content;
+  border: 2px solid black;
+  margin-left: 6rem;
+}
+
+figcaption {
+  text-align: left;
+  font-style: normal;
+  margin: 2rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  padding: 1rem;
+}
